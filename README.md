@@ -4,3 +4,9 @@ Criar packege.json => npm init
 Criar packege-lock.json => npm install
 
 Criar README
+
+instalar dependências do express
+=> npm install express
+
+Criar um arquivo ".gitignore"
+escrever node_modules
