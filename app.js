@@ -1,4 +1,11 @@
 import express from "express";
-const app = express();
+import car from "./car.js";
 
-app.listen(3000, () => console.log("Servidor rodando com sucesso"));
+const app = express();
+const port = 3000;
+
+app.get("/", (requisicao, resposta) => {
+  resposta.send(car);
+});
+
+app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
